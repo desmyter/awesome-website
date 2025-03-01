@@ -51,6 +51,10 @@ button {
     width: 100px;
 }
 
+footer {
+    padding: 40px;
+}
+
 /* Classes */
 .secondary-link {
     font-size: 18px;
@@ -72,16 +76,12 @@ button {
     /* padding: 0px 100px; */
 }
 
-.join {
-    background-color: #3882F6;
-}
-
 .menu-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
-    padding: 0px 50px;
+    padding: 0px 100px;
 }
 
 .awesome {
@@ -89,7 +89,7 @@ button {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 50px 50px;
+    padding: 50px 100px;
     gap: 20px;
 }
 
@@ -136,12 +136,14 @@ button {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .imagetextinternal {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 250px;
+    height: auto;
     align-items: center;
     gap: 20px;
 }
@@ -157,18 +159,21 @@ button {
     font-style: italic;
     padding: 100px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
 .join {
+    background-color: #3882F6;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
     gap: 10px;
     color: #F9FAF8;
-    padding: 50px 300px;
+    padding: 50px 100px;
     margin: 100px 150px;
     border-radius: 10px;
 }
@@ -177,8 +182,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    align-content: center;
 }
 
 .join-2 {
@@ -188,17 +192,14 @@ button {
     align-content: center;
 }
 
-footer {
-    padding: 20px;
-}
-
 .footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* width: 100%; */
     position: sticky;
 }
+
+/* Identifiers */
 
 #credit {
     color: #F9FAF8;
@@ -206,4 +207,14 @@ footer {
 
 #bold {
     font-weight: bold;
+}
+
+#quotefrom {
+    align-self: flex-end;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#sign-up-header-button {
+    border: none;
 }
